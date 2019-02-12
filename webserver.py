@@ -1,15 +1,16 @@
 import spider
 
-def readFile(path):
-	file = open(path, 'r+', encoding='utf8')
-	text = file.read()
-	file.close()
-	return text
+
+def read(path):
+    f = open(path, 'r+', encoding='utf-8')
+    t = f.read()
+    f.close()
+    return t
+
 
 def index():
-	text = readFile('web/index.html')
-	info = spider.update()
-	info['table main'] = readFile('web/table.html')
-	for key, val in info.items():
-		text = text.replace('{{ %s }}' % key, str(val))
-	return text
+    spider.update()
+    table = read('web/table.html')
+    text = read('web/index.html').replace('{{ table main }}', table)
+    # print(text)
+    return text

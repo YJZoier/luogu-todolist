@@ -1,3 +1,5 @@
+声明：本版本是为了提供一个临时解决方案（实测在 Windows 10 下可用），从 [TosakaUCW](https://github.com/TosakaUCW) 的 [Pull Request](https://github.com/memset0/luogu-todolist/pull/4) 修改而来；具体请等待原作者 [memset0](https://github.com/memset0) 的更新。
+
 # Luogu Todolist
 
 **第三方**轻量级本地 Todo List for 洛谷
